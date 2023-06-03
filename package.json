@@ -1,0 +1,44 @@
+{
+  "name": "nest-javascript-starter",
+  "version": "1.0.1",
+  "description": "Nest Framework Nodejs development",
+  "scripts": {
+    "start": "babel-node index.js",
+    "start:dev": "nodemon",
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "test:e2e": "jest --config ./test/jest-e2e.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/common": "^9.4.2",
+    "@nestjs/core": "^9.4.2",
+    "@nestjs/platform-express": "^9.4.2",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/node": "^7.22.1",
+    "@babel/plugin-proposal-decorators": "^7.22.3",
+    "@babel/plugin-transform-runtime": "^7.22.4",
+    "@babel/preset-env": "^7.22.4",
+    "@babel/register": "^7.21.0",
+    "@babel/runtime": "^7.22.3",
+    "@nestjs/testing": "^9.4.2",
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.js$",
+    "coverageDirectory": "../coverage"
+  }
+}
