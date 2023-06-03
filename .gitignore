@@ -389,4 +389,3 @@ Temporary Items
 # Local
 dokcer-compose.yml
 .env
-package.lock.json
