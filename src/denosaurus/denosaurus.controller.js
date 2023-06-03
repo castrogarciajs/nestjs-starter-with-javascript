@@ -1,9 +1,16 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get } from "@nestjs/common";
+import { DenosaurusService } from "./denosaurus.service";
 
-@Controller('denosaurus')
+@Controller("denosaurus")
 export class DenosaurusController {
-    @Get()
-    denosaurus() {
-        return "Hello denosaurus"
-    }
+  /**
+   *
+   * @param {DenosaurusService} denosaurusServices
+   */
+  denosaurusServices;
+
+  @Get()
+  denosaurus() {
+    return this.denosaurusServices.getAllDenosaurus();
+  }
 }

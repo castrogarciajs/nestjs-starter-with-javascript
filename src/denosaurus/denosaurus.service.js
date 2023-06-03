@@ -1,4 +1,19 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable } from "@nestjs/common";
 
 @Injectable()
-export class DenosaurusService {}
+export class DenosaurusService {
+  getAllDenosaurus() {
+    return [
+      {
+        name: "tiranosaurus",
+        description: "roar",
+      },
+    ];
+  }
+
+  deleteDenosauru() {}
+
+  putDenosauru() {}
+
+  createDenosauru() {}
+}
